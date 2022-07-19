@@ -119,7 +119,8 @@ body {
 footer {
     background-color: #161616;
     color: whitesmoke;
-    padding: 50px;
+    padding: 10px;
+    margin-top: 80px;
 }
 
 footer h1 {
@@ -142,5 +143,79 @@ footer a {
     text-decoration: none;
     color: #a8a6a6;
     font-size: 1rem;
+}
 
+.social-media {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+.social-media i {
+    margin: 5%;
+}
+
+/* for mobile */
+@media only screen and (max-width:600px) {
+    .button {
+        padding: 5px 10px;
+        width: 161px;
+        height: 40px;
+
+    }
+
+    .banner-part .left-div {
+        margin: -10px;
+    }
+
+    .banner-part {
+        display: block;
+        height: 650px;
+        width: 315px;
+        border-radius: 0px;
+        margin-left: 0%;
+    }
+
+    .banner-part h1 {
+        font-size: 1.5rem;
+    }
+
+    .banner-part p {
+        font-size: 1rem;
+    }
+
+    .banner-part img {
+        height: 250px;
+        width: 150px;
+        margin-top: 20px;
+        margin-left: 25%;
+    }
+
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 0px;
+    }
+
+    .menu {
+        background-color: white;
+        width: 70%;
+        text-align: center;
+        margin-left: 10%;
+    }
+
+    .menu a {
+        font-size: 1rem;
+        background-color: aliceblue;
+    }
+
+    .container .live-stream {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    footer .contact {
+        flex-direction: column;
+        text-align: center;
+        margin: 10px;
+    }
 }
