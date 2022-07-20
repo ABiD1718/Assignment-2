@@ -3,7 +3,7 @@ body {
 }
 
 /* for mobile*/
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:500px) {
     .button {
         padding: 5px 10px;
         width: 161px;
@@ -16,8 +16,9 @@ body {
     }
 
     .banner-part {
-        display: block;
-        height: 700px;
+        display: flex;
+        flex-direction: column;
+        height: 1200px;
         width: 350px;
         border-radius: 0px;
         margin-left: 0%;
@@ -32,14 +33,14 @@ body {
     }
 
     .banner-part img {
-        height: 250px;
+        height: 50px;
         width: 150px;
-        margin-top: 20px;
+        margin-top: -50px;
         margin-left: 25%;
     }
 
     .container {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1,    1fr);
         width: 100%;
         margin-top: 0px;
     }
@@ -224,10 +225,14 @@ footer a {
 
 /* for tablet */
 @media only screen and (min-width:500px) and (max-width:992px) {
+    * {
+        box-sizing: border-box;
+    }
+
     .banner-part {
-        height: 600px;
-        width: 1500px;
-        margin-left: 70px;
+        height: 900px;
+        width: 700px;
+        margin-left: 10px;
     }
 
     .banner-part h1 {
@@ -247,13 +252,25 @@ footer a {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    #nav {
+    /* #nav {
         display: flex;
-    }
+    } */
 
-    .container .menu {
+    .menu {
+        grid-row: auto;
+        height: 250px;
+        width: 90px;
         background-color: white;
     }
+
+    .menu a {
+        height: 90px;
+        width: 90px;
+        background-color: black;
+        color: white;
+        font-size: 15px;
+    }
+
 
 
 }
